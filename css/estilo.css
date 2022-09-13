@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*Permalink-usetoeditandsharethisgradient:;
+    https://colorzilla.com/gradient-editor/#fb83fa+0,e93cec+100;
+    Pink+3D+%232*/background: #fb83fa;
+    /*Oldbrowsers*/background: -moz-linear-gradient(top,  #fb83fa 0%, #e93cec 100%);
+    /*FF3.6-15*/background: -webkit-linear-gradient(top,  #fb83fa 0%,#e93cec 100%);
+    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to bottom,  #fb83fa 0%,#e93cec 100%);
+    /*W3C,IE10+,FF16+,Chrome26+,Opera12+,Safari7+*/filter:;
+    progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83fa', endColorstr='#e93cec',GradientType=0 );
+    /*IE6-9*/font-family: 'Montserrat', sans-serif;
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb83fa', endColorstr='#e93cec',GradientType=0 );
+}
+                       /* menu */
+.menu{
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: #fb83fa;
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color:white
+}
+.menu li a:hover{
+    color:yellow;
+    font-weight: bold;
+
+}
+h1{
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: yellow ;
+    text-align: center;
+}
+.fotoperfil{
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    
+}
+.imagendefondo{
+    float:right;
+    margin: 10px;
+    padding: 10px;
+}
+                  /* catalogos */
+
+
+.gridPadre{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    ".  img1  ."
+    ".  img2  ."
+    ".  img3  ."
+    ".  img4  ."
+    ".  img5  .";
+}
+.gridBuzosnenes{
+    grid-area: img1;
+    width: 70%;
+}
+.gridConjuntos{
+    grid-area: img2;
+    width: 70%;
+}
+.gridRemerasnenas{
+    grid-area: img3;
+    width: 70%;
+}
+.gridPantalonesnenas{
+    grid-area: img4;
+    width: 70%;
+}
+.gridCamperasbuzosnenas{
+    grid-area: img5;
+    width: 70%;
+}
+main img{
+    width: 200px;
+    height: 200px;
+    
+}
+.formulario{
+    margin: 10px;
+    padding: 20px;
+    color: aqua;
+    font-size: 35px;
+    font-family:'Pacifico', cursive;serif;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.6;
+}
+.caja{
+    margin: 10px;
+    padding: 13px;
+    font-size: large;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-decoration: dashed;
+}
+                  /* formas de contacto */
+h3{
+    color: white;
+}
+.bg-footer{
+    background-color:#fb83fa ;
+    padding: 20px 10px;
+    margin: 10px;
+}
+.redes a i{
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 10px;
+}
+.df-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.redes a i:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
